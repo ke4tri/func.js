@@ -1,10 +1,8 @@
 
-
 // const printToDom = (stringToPrint, divId) => {
 //     const selectedDiv = document.getElementById(divId);
 //     selectedDiv.innerHTML += stringToPrint;
 // };
-
 
 
 // let cow = 'moo';
@@ -26,13 +24,18 @@ function tellTime() {
     var theHr = now.getHours();
     var theMin = now.getMinutes();
     // alert("Current time: " + theHr + ":" + theMin);
-    let strip = "Current time: " + theHr + ":" + theMin ;
-    return strip;
+    // let strip = "Current time: " + theHr + ":" + theMin ;
+    // return strip;
+    return now;
 }
 
-const current_tim = tellTime();
-printToDom(current_tim, 'test');
-printToDom(current_time, 'test3')
+console.log(tellTime());
+// const current_tim = tellTime();
+printToDom(tellTime(), 'test');
+
+let delay = setTimeout(tellTime(),5000);
+printToDom(delay, 'test2');
+// printToDom(tellTime(), 'test3')
 
 // Give you a number and you state if it is prime 
 // Write as standard function and then an arrow function

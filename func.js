@@ -1,39 +1,41 @@
 
+
+const sonnet = "How like a winter hath my absence been From thee, the pleasure of the fleeting year! What freezings have I felt, what dark days seen! What old December's bareness everywhere! And yet this time removed was summer's time; The teeming autumn, big with rich increase, Bearing the wanton burden of the prime, Like widow'd wombs after their lords' decease: Yet this abundant issue seemed to me But hope of orphans, and unfathered fruit; For summer and his pleasures wait on thee, And, thou away, the very birds are mute: Or, if they sing, 'tis with so dull a cheer, That leaves look pale, dreading the winter's near.";
+const sonnet2 = sonnet.replace("winter", "yuletide");
+
+console.log(sonnet.indexOf('orphans'));
+console.log(sonnet.length);
+console.log(sonnet2);
+console.log();
+console.log();
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
 // const printToDom = (stringToPrint, divId) => {
 //     const selectedDiv = document.getElementById(divId);
 //     selectedDiv.innerHTML += stringToPrint;
-// };
+
+// }
 
 
-// let cow = 'moo';
-// let cat = 'mewo';
-
-// printToDom(cow, 'taco');
-// printToDom(cat, 'pie')
-
-// console.log(cow + ' ' + cat);
-// console.log(`${cow} ${cat}`);
-
-const printToDom = (stringToPrint, divId) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML += stringToPrint;
-
-}
-
-
-let bandNumber = 1
-const takeNumber = (bandName) => {
-  let band = ((bandNumber++) + "." + bandName);
-//   return console.log(band);
-  return printToDom(band , 'test3');
+// let bandNumber = 1
+// const takeNumber = (bandName) => {
+//   let band = ((bandNumber++) + "." + bandName);
+//   return printToDom(band , 'test3');
   
-}
+// }
 
-let bandArray = ['Galactic Scum', 'Underdogs']
+// let bandArray = ['Galactic Scum', 'Underdogs']
 
 
-takeNumber("Galactic Scum");
-takeNumber("Underdogs");
+// takeNumber("Galactic Scum");
+// takeNumber("Underdogs");
+
+
+/*-------------------------------------------------------------------------------------------------------*/ 
+
 
 // const takeNumber =  (bandName) => {
 //     const bandString = `<h3>${bandNumber}. ${bandName}</h3>`;
